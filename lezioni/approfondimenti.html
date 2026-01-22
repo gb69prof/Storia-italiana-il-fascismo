@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IL FASCISMO • Approfondimenti</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="nav-left">
+        <a class="pill" href="../index.html" aria-label="Home">
+          <strong>Home</strong>
+          <small>↩︎</small>
+        </a>
+      </div>
+
+      <div class="title">IL FASCISMO</div>
+
+      <div class="nav-right">
+        <a class="pill" href="../libera-tutor.html" aria-label="Libera-tutor">
+          <strong>Libera-tutor</strong>
+          <small>chatbot</small>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="grid">
+      <section class="card" id="section1">
+        <div class="card-header">
+          <h2>Sezione 1</h2>
+          <span class="badge">immagine → video</span>
+        </div>
+        <div class="card-body">
+          <div class="media" id="mediaBox"></div>
+          <div class="hint">Clicca sull’immagine per aprire il video nello stesso spazio.</div>
+        </div>
+      </section>
+
+      <section class="card" id="section2">
+        <div class="card-header">
+          <h2>Sezione 2</h2>
+          <span class="badge">txt/approfondimenti.txt</span>
+        </div>
+        <div class="card-body">
+          <div class="textbox" id="txtBox"></div>
+        </div>
+      </section>
+
+      <section class="card" id="section3">
+        <div class="card-header">
+          <h2>Indice</h2>
+          <span class="badge">editabile</span>
+        </div>
+        <div class="card-body">
+          <div class="index-toolbar">
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <button class="btn" id="helpBtn" type="button">Come si modifica <span class="kbd">doppio click</span></button>
+              <button class="btn" id="resetBtn" type="button">Reset indice</button>
+            </div>
+            <div class="hint" style="margin:0">Modifichi il testo, non i link.</div>
+          </div>
+          <ol class="toc" id="tocList"></ol>
+          <div class="footer">Suggerimento: sostituisci <span class="kbd">assets/cover.svg</span> e il video in <span class="kbd">js/app.js</span>.</div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="../js/app.js"></script>
+  <script>
+    setupMediaToggle("#mediaBox", "../assets/cover.svg");
+    loadTxtInto("#txtBox", "../txt/approfondimenti.txt");
+    attachTocControls("#resetBtn", "#helpBtn", "#tocList", "lezioni/approfondimenti.html");
+  </script>
+</body>
+</html>
