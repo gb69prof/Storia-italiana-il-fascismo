@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0b1220"/>
+    <stop offset="1" stop-color="#162a4a"/>
+  </linearGradient>
+  <radialGradient id="r" cx="70%" cy="35%" r="70%">
+    <stop offset="0" stop-color="#2b6cb0" stop-opacity="0.9"/>
+    <stop offset="1" stop-color="#0b1220" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<rect width="1400" height="800" fill="url(#g)"/>
+<rect width="1400" height="800" fill="url(#r)"/>
+<g opacity="0.9">
+  <path d="M120 610 C 260 520, 330 520, 470 610 S 690 700, 830 610 1040 520, 1180 610" fill="none" stroke="#cbd5e1" stroke-opacity="0.35" stroke-width="3"/>
+  <path d="M120 650 C 260 560, 330 560, 470 650 S 690 740, 830 650 1040 560, 1180 650" fill="none" stroke="#cbd5e1" stroke-opacity="0.18" stroke-width="3"/>
+</g>
+<g font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" fill="#e5e7eb">
+  <text x="90" y="160" font-size="60" font-weight="800">IL FASCISMO</text>
+  <text x="90" y="220" font-size="26" opacity="0.9">Web app didattica • layout moderno • contenuti da personalizzare</text>
+  <g opacity="0.85">
+    <rect x="90" y="270" width="520" height="120" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+    <text x="125" y="320" font-size="22" font-weight="700">Sezione 1</text>
+    <text x="125" y="355" font-size="18" opacity="0.9">Clicca: immagine ⇄ video</text>
+  </g>
+  <g opacity="0.85">
+    <rect x="90" y="410" width="520" height="120" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+    <text x="125" y="460" font-size="22" font-weight="700">Sezione 2</text>
+    <text x="125" y="495" font-size="18" opacity="0.9">Testo da txt/intro.txt</text>
+  </g>
+</g>
+</svg>
